@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #E0E0FA;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.addDeclarationController">
+   <children>
+      <AnchorPane layoutY="84.0" prefHeight="315.0" prefWidth="700.0" style="-fx-background-color: #FAFAFA;">
+         <children>
+            <Button fx:id="addButton" layoutX="244.0" layoutY="253.0" mnemonicParsing="false" onAction="#openMenuUser" prefHeight="25.0" prefWidth="178.0" text="Ввод" />
+            <TextField fx:id="shipperNumberFild" layoutX="76.0" layoutY="24.0" prefHeight="25.0" prefWidth="178.0" promptText="Грузоотправитель №" />
+            <TextField fx:id="seatsFild" layoutX="46.0" layoutY="71.0" prefHeight="25.0" prefWidth="178.0" promptText="Кол-во мест" />
+            <TextField fx:id="paymentMethodCodeFild" layoutX="46.0" layoutY="113.0" prefHeight="25.0" prefWidth="178.0" promptText="Код способа оплаты" />
+            <TextField fx:id="declarantNumberFild" layoutX="46.0" layoutY="158.0" prefHeight="25.0" prefWidth="178.0" promptText="Номер декларации" />
+            <TextField fx:id="consigneeNumberFild" layoutX="314.0" layoutY="24.0" prefHeight="25.0" prefWidth="178.0" promptText="Грузополучатель №" />
+            <TextField fx:id="positionsFild" layoutX="254.0" layoutY="71.0" prefHeight="25.0" prefWidth="395.0" promptText="Позиции" />
+            <TextField fx:id="shipperCountryCodeFild" layoutX="254.0" layoutY="113.0" prefHeight="25.0" prefWidth="178.0" promptText="Код страны-отправителя" />
+            <TextField fx:id="numberTSFild" layoutX="254.0" layoutY="158.0" prefHeight="25.0" prefWidth="178.0" promptText="Номер ТС" />
+            <TextField fx:id="typeDeclarationFild" layoutX="553.0" layoutY="24.0" prefHeight="25.0" prefWidth="91.0" promptText="Тип декларации" />
+            <TextField fx:id="consigneeCountryCodeFild" layoutX="458.0" layoutY="113.0" prefHeight="25.0" prefWidth="178.0" promptText="Код страны-получателя" />
+            <TextField fx:id="grossWeightFild" layoutX="46.0" layoutY="202.0" prefHeight="25.0" prefWidth="178.0" promptText="Масса брутто" />
+            <TextField fx:id="netWeightFild" layoutX="254.0" layoutY="202.0" prefHeight="25.0" prefWidth="178.0" promptText="Масса нетто" />
+            <Line endX="599.0" layoutX="101.0" layoutY="60.0" startX="-100.0" stroke="#989797" />
+            <Line endX="585.7999877929688" endY="1.52587890625E-5" layoutX="115.0" layoutY="103.0" startX="-114.99999237060547" startY="1.52587890625E-5" stroke="#989797" />
+            <Line endX="600.6000366210938" endY="1.52587890625E-5" layoutX="101.0" layoutY="149.0" startX="-100.0" stroke="#989797" />
+            <Line endX="601.7999877929688" layoutX="101.0" layoutY="193.0" startX="-100.0" stroke="#989797" />
+            <Line endX="602.6000366210938" layoutX="100.0" layoutY="235.0" startX="-100.0" stroke="#989797" />
+            <TextField fx:id="goodsCodeFild" layoutX="481.0" layoutY="200.0" prefHeight="25.0" prefWidth="178.0" promptText="Код товара" />
+         </children>
+      </AnchorPane>
+      <Label layoutX="141.0" layoutY="31.0" prefHeight="43.0" prefWidth="417.0" text="Добавление декларации">
+         <font>
+            <Font name="Arial Black" size="29.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
